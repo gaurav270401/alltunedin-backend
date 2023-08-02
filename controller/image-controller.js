@@ -1,7 +1,7 @@
 import grid from 'gridfs-stream';
 import mongoose from 'mongoose';
 
-const url = 'https://alltunedinbackend.onrender.com';
+const url =  process.env.BaseUrl || 'http://localhost:8000';
 
 
 let gfs, gridfsBucket;
